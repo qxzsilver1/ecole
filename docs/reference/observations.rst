@@ -25,6 +25,10 @@ Pseudocosts
 ^^^^^^^^^^^
 .. autoclass:: ecole.observation.Pseudocosts
 
+Khalil et al. 2016
+^^^^^^^^^^^^^^^^^^
+.. autoclass:: ecole.observation.Khalil2016
+
 Utilities
 ---------
 The following observation functions are used internally by Ecole.
