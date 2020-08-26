@@ -45,7 +45,7 @@ template <typename Dynamics, typename Func> void unit_tests(Dynamics&& dyn, Func
 
 		SECTION("Run another trajectory") {
 			model = get_model();
-			std::tie(done, action_set) = dyn.reset_dynamics(model);
+			auto [done, action_set] = dyn.reset_dynamics(model);
 			while (!done) {
 				std::tie(done, action_set) = dyn.step_dynamics(model, policy(action_set));
 			}
