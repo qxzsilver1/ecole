@@ -8,8 +8,7 @@
 
 #include "core.hpp"
 
-namespace ecole {
-namespace scip {
+namespace ecole::scip {
 
 namespace py = pybind11;
 
@@ -61,5 +60,4 @@ void bind_submodule(py::module const& m) {
 		.def("solve", &Model::solve, py::call_guard<py::gil_scoped_release>());
 }
 
-}  // namespace scip
-}  // namespace ecole
+}  // namespace ecole::scip
